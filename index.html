@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- google font: "Lato" starts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- google font: "Lato" ends -->
+    <!-- font-awesome cdn link starts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font-awesome cdn link ends -->
+
+    <!-- DaisyUI CDN added starts -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DaisyUI CDN added ends -->
+
+
+    <!-- internal css starts -->
+    <style>
+        .font-family {
+            font-family: 'Lato', sans-serif;
+        }
+
+        .banner-gradient {
+            background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);
+            border-radius: 10px;
+
+        }
+    </style>
+    <!-- internal css ends -->
+</head>
+
+<body class="font-family">
+    <!-- Header part starts -->
+    <header>
+        <!-- navbar section starts -->
+        <section id="navbar" class="my-12">
+            <div class="navbar justify-between bg-[#F85559] 2xl:max-w-[1440px] mx-auto h-32 rounded-full">
+                <!-- Nav-menu starts -->
+                <div class="navbar-center hidden lg:flex ml-12">
+                    <ul class="menu menu-horizontal px-1 text-white text-[18px] font-medium  ">
+                        <li><a class="hover:text-[#F85559] hover:bg-white transition-all ease-linear">Home</a></li>
+                        <li><a class="hover:text-[#F85559] hover:bg-white transition-all ease-linear">About Us</a></li>
+                        <li><a class="hover:text-[#F85559] hover:bg-white transition-all ease-linear">Shop</a></li>
+                        <li><a class="hover:text-[#F85559] hover:bg-white transition-all ease-linear">All Fruits</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Nav-menu ends -->
+
+                <!-- nav-logo starts -->
+                <div class="">
+                    <img src="./images/logo.png" alt="">
+                    <a class="normal-case text-[40px] text-white font-bold ml-4">Fruit Burst</a>
+                </div>
+                <!-- nav-logo ends -->
+
+                <!-- nav searchbar starts -->
+                <div class="flex-none lg:flex gap-2 mr-12">
+                    <div class="form-control relative">
+                        <input type="text" placeholder="Search here" class="input w-[400px] h-[56px] rounded-full" />
+                        <span class="absolute right-6 top-[50%] translate-y-[-50%]">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                    </div>
+                </div>
+                <!-- nav searchbar ends -->
+            </div>
+        </section>
+        <!-- navbar section ends -->
+
+        <!-- banner section starts -->
+        <section id="banner">
+            <div class="carousel flex 2xl:max-w-[1440px] mx-auto overflow-hidden">
+                <!-- slide-1 starts -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <div>
+                        <img src="./images/banner1.png" class="w-full" />
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-10">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                    <div class="overlay banner-gradient absolute w-[100%] h-[100%]">
+                        <div class="text-white text-center relative top-[50%] translate-y-[-50%]">
+                            <h1 class="text-[72px] font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                            <p class="py-6 text-[20px] text-white">We supply highly quality organic products</p>
+                            <button
+                                class="py-[15px] px-[30px] bg-[#F85559] rounded-[10px] text-[20px] font-extrabold">Shop
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide-1 ends -->
+
+                <!-- slide-2 starts -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div>
+                        <img src="./images/banner2.png" class="w-full" />
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-10">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                    <div class="overlay banner-gradient absolute w-[100%] h-[100%]">
+                        <div class="text-white text-center relative top-[50%] translate-y-[-50%]">
+                            <h1 class="text-[72px] font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                            <p class="py-6 text-[20px] text-white">We supply highly quality organic products</p>
+                            <button
+                                class="py-[15px] px-[30px] bg-[#F85559] rounded-[10px] text-[20px] font-extrabold">Shop
+                                Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide-2 ends -->
+
+                <!-- slide-3 starts -->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div>
+                        <img src="./images/banner3.png" class="w-full" />
+
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-10">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                    <div class="overlay banner-gradient absolute w-[100%] h-[100%]">
+                        <div class="text-white text-center relative top-[50%] translate-y-[-50%]">
+                            <h1 class="text-[72px] font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                            <p class="py-6 text-[20px] text-white">We supply highly quality organic products</p>
+                            <button
+                                class="py-[15px] px-[30px] bg-[#F85559] rounded-[10px] text-[20px] font-extrabold">Shop
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide-3 ends -->
+
+                <!-- slide-4 starts -->
+                <div id="slide4" class="carousel-item relative w-full">
+                    <div>
+                        <img src="./images/banner4.png" class="w-full" />
+
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-10">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                    <div class="overlay banner-gradient absolute w-[100%] h-[100%]">
+                        <div class="text-white text-center relative top-[50%] translate-y-[-50%]">
+                            <h1 class="text-[72px] font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                            <p class="py-6 text-[20px] text-white">We supply highly quality organic products</p>
+                            <button
+                                class="py-[15px] px-[30px] bg-[#F85559] rounded-[10px] text-[20px] font-extrabold">Shop
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide-4 ends -->
+            </div>
+        </section>
+        <!-- banner section ends -->
+    </header>
+    <!-- Header part ends -->
+</body>
+
+</html>
